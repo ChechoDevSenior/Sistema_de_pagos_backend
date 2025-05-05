@@ -14,13 +14,13 @@ import java.util.List;
 public interface PagoRepository extends JpaRepository<Pago, Long>{
 
     //Metodo personalizado para buscar pagos por un estudiante en específico
-    List<Pago>findByIdEstudianteCodigo(String codigo);  
+    List<Pago>findByEstudianteCodigo(String codigo);  
 
     //Método personalizado para buscar los pagos por su estado CREADO, VALIDADO, RECHAZADO
-    List<Pago> findByIdStatus(PagoStatus status);
+    List<Pago> findByStatus(PagoStatus status);
 
     //Método personalizado para buscar pagos por su tipo EFECTIVO, CHEQUE, TRANSFERENCIA, DEPOSITO
-    List<Pago> findByIdType(TypePago type);
+    List<Pago> findByType(TypePago type);
 
     
 }
