@@ -5,6 +5,7 @@ package com.sistemadepagosIbero.sistema_pagos_backend_Ibero.entitis;
 import jakarta.persistence.Column; // Importa la anotación @Column para definir propiedades de columnas en la base de datos.
 import jakarta.persistence.Entity; // Importa la anotación @Entity, que marca la clase como una entidad JPA.
 import jakarta.persistence.Id; // Importa la anotación @Id para especificar la clave primaria.
+
 import lombok.AllArgsConstructor; // Importa la anotación @AllArgsConstructor que genera un constructor con todos los atributos.
 import lombok.Builder; // Importa la anotación @Builder, que proporciona un patrón de diseño para la creación de objetos.
 import lombok.Data; // Importa la anotación @Data, que genera los métodos getters, setters, hashCode y toString.
